@@ -1,0 +1,89 @@
+:root {
+  --black: #111;
+  --accent: #fd9222;
+  --violet: #1e1823;
+  --beige: #fcf1e0;
+  --bg-body: #fafafa;
+  --gray: #4c4c4c;
+  --white: #fff;
+  --marker-body: #4c4c4c;
+  --marker-border: #eceded;
+  --gray: rgba(255, 255, 255, 0.7);
+  --gray-secondary: rgba(17, 17, 17, 0.7);
+  --fonts: "Montserrat", sans-serif;
+  --size-text: 14px;
+  --line-height: 1.28;
+  --letter-spacing: -0.02em;
+}
+
+body {
+  font-family: var(--fonts);
+  font-size: var(--size-text);
+  color: var(--black);
+  background-color: var(--bg-body);
+  line-height: var(--line-height);
+  letter-spacing: var(--letter-spacing);
+}
+/* RESET */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+/* /RESET */
+
+/* SECTION STYLE */
+/* header */
+.header {
+}
+
+.logo {
+  font-style: italic;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.11111;
+  letter-spacing: -0.03em;
+}
+
+.nav {
+}
+
+.nav-list {
+}
+.nav-item {
+}
+
+.nav-link {
+  font-weight: 500;
+  line-height: 1.14286;
+}
+.social-list {
+}
+.social-item {
+}
