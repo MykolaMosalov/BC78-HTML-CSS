@@ -127,3 +127,23 @@ button {
 }
 
 /* Hero style */
+
+/* Benefits style */
+
+.benefits {
+  background-color: var(--violet);
+}
+.benefits-list {
+}
+.benefits-item {
+}
+.benefits-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.22222;
+  color: var(--white);
+}
+
+.benefits-text {
+  color: rgba(255, 255, 255, 0.7);
+}
