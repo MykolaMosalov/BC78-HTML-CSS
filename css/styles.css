@@ -48,6 +48,13 @@ img {
   padding: 0;
 }
 
+.container {
+  max-width: 1300px;
+  padding-left: 32px;
+  padding-right: 32px;
+  margin: 0 auto;
+}
+
 button {
   cursor: pointer;
 }
@@ -88,15 +95,21 @@ button {
 .social-item {
 }
 
+
 /* Hero style */
 
 .hero {
   background-color: rgba(17, 17, 17, 0.7);
+  padding-top: 381px;
+  padding-bottom: 40px;
 }
 
 .hero-title {
   font-weight: 500;
   font-size: 28px;
+  max-width: 484px;
+  margin-bottom: 32px;
+  
 
   /* line-height: 34px; */
   line-height: 1.21429;
@@ -114,6 +127,7 @@ button {
   font-size: 14px;
   color: var(--white);
   border: none;
+  margin-right: 14px;
 }
 
 .hero-link {
