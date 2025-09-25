@@ -24,6 +24,7 @@ body {
   line-height: var(--line-height);
   letter-spacing: var(--letter-spacing);
 }
+
 /* RESET */
 h1,
 h2,
@@ -81,6 +82,7 @@ button {
   text-decoration: none;
   color: inherit;
 }
+
 /* /RESET */
 
 /* SECTION STYLE */
@@ -117,8 +119,8 @@ button {
   align-items: center;
   gap: 24px;
 }
-.nav-item {
-}
+
+.nav-item {}
 
 .nav-link {
   padding-top: 24px;
@@ -127,12 +129,13 @@ button {
   line-height: 1.14286;
   display: block;
 }
+
 .social-list {
   display: flex;
   gap: 14px;
 }
-.social-item {
-}
+
+.social-item {}
 
 /* Hero style */
 
@@ -185,15 +188,26 @@ button {
   background-color: var(--violet);
   padding: 50px 0;
 }
+
+.benefits .container {
+  padding: 0 50px;
+}
+
 .benefits-list {
+  display: flex;
+  gap: 88px;
 }
+
 .benefits-item {
+  width: calc((100% - 2 * 88px) / 3);
 }
+
 .benefits-title {
   font-weight: 600;
   font-size: 18px;
   line-height: 1.22222;
   color: var(--white);
+  margin-bottom: 18px;
 }
 
 .benefits-text {
@@ -219,8 +233,7 @@ button {
   margin-bottom: 50px;
 }
 
-.ingridients-list {
-}
+.ingridients-list {}
 
 .ingridients-item {
   background-color: var(--accent);
@@ -228,6 +241,7 @@ button {
   border-radius: 15px;
   padding: 28px 23px;
 }
+
 .ingridients-item:not(:last-child) {
   margin-bottom: 32px;
 }
@@ -236,6 +250,7 @@ button {
   background-color: transparent;
   border: 1px solid var(--accent);
 }
+
 .ingridients-item:nth-child(4n + 1) {
   background-color: var(--accent);
   color: var(--white);
