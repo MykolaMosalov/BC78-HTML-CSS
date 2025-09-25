@@ -48,6 +48,24 @@ img {
   padding: 0;
 }
 
+.accent{
+  color: var(--accent);
+}
+
+.is-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .container {
   max-width: 1300px;
   padding-left: 32px;
@@ -146,6 +164,7 @@ button {
 
 .benefits {
   background-color: var(--violet);
+  padding: 50px 0;
 }
 .benefits-list {
 }
@@ -160,4 +179,59 @@ button {
 
 .benefits-text {
   color: rgba(255, 255, 255, 0.7);
+}
+
+/* INGRIDIENTS STYLE */
+
+.ingridients {
+  padding-top: 120px;
+  padding-bottom: 60px;
+}
+
+.ingridients-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    max-width: 412px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.ingridients-list {}
+
+.ingridients-item {
+  background-color: var(--accent);
+  width: 260px;
+  border-radius: 15px;
+  padding: 28px 23px;
+}
+.ingridients-item:not(:last-child){
+  margin-bottom: 32px;
+}
+
+.ingridients-item:nth-child(2n){
+  background-color: transparent;
+  border: 1px solid var(--accent);
+}
+.ingridients-item:nth-child(4n + 1){
+  background-color: var(--accent);
+  color: var(--white);
+}
+
+.ingridients-item:nth-child(4n + 3){
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.ingridients-img {
+  margin-bottom: 36px;
+}
+
+.ingridients-subtitle {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
 }
