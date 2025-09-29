@@ -226,17 +226,15 @@ button {
   padding: 0 50px;
 }
 .benefits-icon-wrapper {
-width: 62px;
-height: 62px;
-border: 1px solid rgba(255, 255, 255, 0.5);
-border-radius: 365px;
-margin-bottom: 22px;
-display: flex;
-align-items: center;
-justify-content: center;
+  width: 62px;
+  height: 62px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 365px;
+  margin-bottom: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-
 
 .benefits-list {
   display: flex;
@@ -248,19 +246,16 @@ justify-content: center;
   position: relative;
 }
 
-
 .benefits-item:not(:last-child)::after {
-content: "";
-display: block;
-border: 1px solid rgba(255, 255, 255, 0.5);
-width: 1px;
-height: 124px;
-position: absolute;
-top: 60px;
-right: -44px;
+  content: "";
+  display: block;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  width: 1px;
+  height: 124px;
+  position: absolute;
+  top: 60px;
+  right: -44px;
 }
-
-
 
 .benefits-title {
   font-weight: 600;
@@ -376,3 +371,66 @@ right: -44px;
 /* .about-item:not(:last-child) {
     margin-bottom: 24px;
 } */
+/*Sellers styles*/
+.sellers {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.sellers-title {
+  margin-bottom: 50px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.16667;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+}
+.sellers-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sellers-item {
+}
+.sellers-img {
+}
+.sellers-subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.content-text-wrapper {
+  padding-top: 28px;
+  padding-bottom: 28px;
+  text-align: center;
+  border-bottom: 1px solid rgba(17, 17, 17, 0.1);
+  border-left: 1px solid rgba(17, 17, 17, 0.1);
+  border-right: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 0 0 15px 15px;
+  background: var(--white);
+}
+.overlay {
+  width: 288px;
+  margin: 0 auto;
+  position: absolute;
+  top: 176px;
+  right: 40px;
+  opacity: 0;
+  /* transform: translateX(150%); */
+}
+.wrapper {
+  position: relative;
+  cursor: pointer;
+  transition: transform 1s linear;
+  /* overflow: hidden; */
+}
+.wrapper:hover .overlay {
+  /* transform: translateX(0); */
+  opacity: 1;
+}
+.wrapper:hover .sellers-img {
+  filter: blur(3px);
+}
+.overlay-text {
+  color: #fafafa;
+}
