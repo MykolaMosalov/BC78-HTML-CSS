@@ -225,6 +225,18 @@ button {
 .benefits .container {
   padding: 0 50px;
 }
+.benefits-icon-wrapper {
+width: 62px;
+height: 62px;
+border: 1px solid rgba(255, 255, 255, 0.5);
+border-radius: 365px;
+margin-bottom: 22px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+
 
 .benefits-list {
   display: flex;
@@ -233,7 +245,22 @@ button {
 
 .benefits-item {
   width: calc((100% - 2 * 88px) / 3);
+  position: relative;
 }
+
+
+.benefits-item:not(:last-child)::after {
+content: "";
+display: block;
+border: 1px solid rgba(255, 255, 255, 0.5);
+width: 1px;
+height: 124px;
+position: absolute;
+top: 60px;
+right: -44px;
+}
+
+
 
 .benefits-title {
   font-weight: 600;
