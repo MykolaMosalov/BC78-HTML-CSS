@@ -436,5 +436,62 @@
         </div>
       </section>
     </main>
+
+    <!-- !MODAL -->
+    <div class="modal">
+      <h2 class="modal-title">LEAVE A REVIEW ABOUT OUR CHOCOLATE</h2>
+      <button type="button" class="modal-close-btn">x</button>
+      <form class="modal-form">
+        <label class="modal-lable" for="username"
+          >Name
+          <input
+            class="modal-input"
+            type="text"
+            name="username"
+            id="username"
+          />
+        </label>
+
+        <label class="modal-lable" for="user-email"
+          >Email
+          <input
+            class="modal-input"
+            type="email"
+            name="user-email"
+            id="user-email"
+          />
+        </label>
+
+        <label class="modal-lable" for="user-phone"
+          >Phone number
+          <input
+            class="modal-input"
+            type="tel"
+            name="user-phone"
+            id="user-phone"
+            required
+          />
+        </label>
+
+        <label class="modal-lable" for="user-comment">
+          Comment
+          <textarea
+            class="modal-textarea"
+            name="user-comment"
+            id="user-comment"
+            placeholder="Enter text"
+          ></textarea>
+        </label>
+
+        <div class="checkbox-wrapper">
+          <input class="modal-checkbox" type="checkbox" name="policy" />
+          <p class="policy-text">
+            I accept the terms and conditions of the Privacy Policy
+          </p>
+        </div>
+
+        <button class="modal-btn" type="submit">Send</button>
+      </form>
+    </div>
   </body>
 </html>
