@@ -441,35 +441,54 @@
       <h2 class="modal-title">
         LEAVE A REVIEW ABOUT <span class="accent">OUR CHOCOLATE</span>
       </h2>
-      <button type="button" class="modal-close-btn">x</button>
+      <button type="button" class="modal-close-btn">
+        <svg class="close-icon" height="24" width="24">
+          <use href="./img/sprites.svg#icon-x-close"></use>
+        </svg>
+      </button>
       <form class="modal-form">
         <label class="modal-lable" for="username"
           >Name
-          <input
-            class="modal-input"
-            type="text"
-            name="username"
-            id="username"
-          />
+          <div class="input-wrapper">
+            <input
+              class="modal-input"
+              type="text"
+              name="username"
+              id="username"
+            />
+            <svg class="modal-icon" height="24" width="24">
+              <use href="./img/sprites.svg#icon-user"></use>
+            </svg>
+          </div>
         </label>
         <label class="modal-lable" for="user-email"
           >Email
-          <input
-            class="modal-input"
-            type="email"
-            name="user-email"
-            id="user-email"
-          />
+          <div class="input-wrapper">
+            <input
+              class="modal-input"
+              type="email"
+              name="user-email"
+              id="user-email"
+            />
+            <svg class="modal-icon" height="24" width="24">
+              <use href="./img/sprites.svg#icon-mail"></use>
+            </svg>
+          </div>
         </label>
         <label class="modal-lable" for="user-phone"
           >Phone number
-          <input
-            class="modal-input"
-            type="tel"
-            name="user-phone"
-            id="user-phone"
-            required
-          />
+          <div class="input-wrapper">
+            <input
+              class="modal-input"
+              type="tel"
+              name="user-phone"
+              id="user-phone"
+              required
+            />
+            <svg class="modal-icon" height="24" width="24">
+              <use href="./img/sprites.svg#icon-phone"></use>
+            </svg>
+          </div>
         </label>
         <label class="modal-lable" for="user-comment">
           Comment
