@@ -578,3 +578,18 @@ button {
   font-size: 14px;
   color: var(--white);
 }
+.close-icon {
+  stroke: #404040
+}
+.modal-icon {
+  position: absolute;
+  top: 50%;
+  left: 24px;
+  stroke: #404040;
+  fill: transparent;
+  transform: translateY(-50%);
+}
+.input-wrapper {
+  position: relative;
+
+}
