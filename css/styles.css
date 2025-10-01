@@ -493,3 +493,88 @@ button {
   margin: 0 auto;
   font-weight: 600;
 }
+
+/* modal  */
+
+.modal {
+  border-radius: 15px;
+  width: 517px;
+  background: var(--white);
+  padding: 40px;
+  position: relative;
+}
+.modal-title {
+  font-weight: 600;
+  font-size: 24px;
+
+  /* line-height: 28px; */
+  line-height: 1.16667;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  max-width: 300px;
+  margin-bottom: 40px;
+}
+.modal-close-btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  background-color: transparent;
+  border: none;
+}
+
+.modal-lable {
+  display: block;
+  font-size: 14px;
+  color: rgba(64, 64, 64, 0.3);
+  margin-bottom: 18px;
+}
+.modal-input {
+  width: 100%;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  border-radius: 13px;
+  /* padding: 22px 24px; */
+  height: 68px;
+  padding-left: 62px;
+  margin-top: 8px;
+}
+.modal-textarea {
+  width: 100%;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  border-radius: 13px;
+  padding: 22px 24px 93px;
+  height: 137px;
+  display: block;
+  resize: none;
+  margin-top: 8px;
+}
+.checkbox-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+.modal-checkbox {
+}
+.policy-text {
+  font-size: 14px;
+  color: rgba(64, 64, 64, 0.6);
+}
+.policy-link {
+  /* text-decoration: underline; */
+  text-decoration-skip-ink: none;
+  color: var(--accent);
+}
+.modal-btn {
+  border-radius: 100px;
+  width: 117px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--accent);
+  border: none;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--white);
+}
