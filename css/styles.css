@@ -520,6 +520,17 @@ button {
   right: 24px;
   background-color: transparent;
   border: none;
+  color: #404040;
+}
+
+/* .modal-close-btn:hover,
+.modal-close-btn:focus {
+  color: var(--accent);
+} */
+
+.modal-close-btn:hover .close-icon,
+.modal-close-btn:focus .close-icon {
+  stroke: var(--accent);
 }
 
 .modal-lable {
@@ -579,8 +590,11 @@ button {
   color: var(--white);
 }
 .close-icon {
-  stroke: #404040
+  /* stroke: currentColor; */
+  stroke: #404040;
+  transition: stroke 250ms linear;
 }
+
 .modal-icon {
   position: absolute;
   top: 50%;
@@ -591,5 +605,23 @@ button {
 }
 .input-wrapper {
   position: relative;
+}
 
+/* .modal-lable:focus-within .modal-icon {
+  stroke: var(--accent);
+}
+
+.modal-lable:focus-within .modal-input {
+  border-color: var(--accent);
+  outline: none;
+} */
+
+.modal-input:focus + .modal-icon {
+  stroke: #fd9222;
+}
+
+.modal-input:focus,
+.modal-textarea:focus {
+  border-color: var(--accent);
+  outline: none;
 }
