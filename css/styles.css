@@ -10,7 +10,7 @@
   --marker-border: #eceded;
   --gray: rgba(255, 255, 255, 0.7);
   --gray-secondary: rgba(17, 17, 17, 0.7);
-  --fonts: "Montserrat", sans-serif;
+  --fonts: 'Montserrat', sans-serif;
   --size-text: 14px;
   --line-height: 1.28;
   --letter-spacing: -0.02em;
@@ -78,10 +78,25 @@ img {
 }
 
 .container {
-  max-width: 1200px;
-  padding-left: 32px;
-  padding-right: 32px;
+  width: 100%;
+  max-width: 375px;
+  padding: 0 20px;
   margin: 0 auto;
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 button {
@@ -96,32 +111,94 @@ button {
 /* /RESET */
 
 /* SECTION STYLE */
-/* header */
 
-/* .header {
-  padding-bottom: 28px;
-  padding-top: 28px;
-} */
+@media screen and (max-width: 767px) {
+  .header {
+    padding-top: 20px;
+    padding-bottom: 14px;
+  }
+}
 
 .header .container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+  .header .container {
+    justify-content: start;
+  }
 }
 
 .logo {
   display: flex;
   align-items: center;
   gap: 4px;
+
   font-style: italic;
   font-weight: 700;
-  font-size: 18px;
-  line-height: 1.11111;
+  font-size: 14px;
   letter-spacing: -0.03em;
-  margin-right: auto;
 }
 
-.nav {
-  margin-right: 90px;
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-right: 49px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 18px;
+    line-height: 1.11111;
+
+    margin-right: auto;
+  }
+}
+
+.burger-btn {
+  border: none;
+  background-color: transparent;
+}
+
+.burger-icon {
+  fill: transparent;
+  stroke: var(--black);
+}
+
+@media screen and (min-width: 768px) {
+  .burger-btn {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .nav {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .nav {
+    margin-right: 90px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .list-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .list-wrapper {
+    justify-content: start;
+    flex-grow: 0;
+  }
 }
 
 .nav-list {
@@ -130,14 +207,12 @@ button {
   gap: 24px;
 }
 
-.nav-item {
-}
-
 .nav-link {
   padding-top: 24px;
   padding-bottom: 24px;
   font-weight: 500;
   line-height: 1.14;
+  font-size: 14px;
   display: block;
   transition: color 250ms linear;
 }
@@ -148,12 +223,26 @@ button {
 }
 
 .social-list {
-  display: flex;
-  gap: 14px;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .social-list {
+    display: flex;
+    gap: 14px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .nav {
+    display: none;
+  }
 }
 
 .social-link {
   transition: color 250ms linear;
+  padding: 18px 0;
+  display: block;
 }
 
 .social-link:hover,
@@ -257,7 +346,7 @@ button {
 }
 
 .benefits-item:not(:last-child)::after {
-  content: "";
+  content: '';
   display: block;
   border: 1px solid rgba(255, 255, 255, 0.5);
   width: 1px;
@@ -604,8 +693,6 @@ button {
   border-radius: 6px;
   border: 1px solid rgba(17, 17, 17, 0.14);
 }
-
-
 
 .modal-checkbox:checked + .checkbox-label .custom-checkbox {
   background-color: var(--accent);
