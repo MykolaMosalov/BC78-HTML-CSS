@@ -500,14 +500,27 @@
           ></textarea>
         </label>
         <div class="checkbox-wrapper">
-          <input class="modal-checkbox" type="checkbox" name="policy" />
-          <p class="policy-text">
-            I accept the terms and conditions of the
-            <a href="" class="policy-link">Privacy Policy</a>
-          </p>
+          <input
+            class="modal-checkbox is-hidden"
+            type="checkbox"
+            name="policy"
+            id="policy"
+          />
+          <label class="checkbox-label" for="policy">
+            <span class="custom-checkbox">
+              <svg class="checkbox-icon" height="10" width="10">
+                <use href="./img/sprites.svg#icon-checkbox"></use>
+              </svg>
+            </span>
+            <p class="policy-text">
+              I accept the terms and conditions of the
+              <a href="" class="policy-link">Privacy Policy</a>
+            </p>
+          </label>
         </div>
         <button class="modal-btn" type="submit">Send</button>
       </form>
     </div>
+    <script type="module" src="./js/script.js"></script>
   </body>
 </html>
